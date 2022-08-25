@@ -1,4 +1,4 @@
-FROM docker.io/library/golang:1.16-alpine as build-go-binary
+FROM docker.io/library/golang:1.18-alpine as build-go-binary
 
 RUN apk update && apk upgrade && apk add --no-cache gcc musl-dev libbsd-dev ca-certificates && update-ca-certificates
 
